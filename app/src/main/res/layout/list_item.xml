@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Asteroid"
+            type="com.udacity.asteroidradar.roomDatabase.AsteroidEntitry" />
+
+
+    </data>
+<!--add card view-->
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/app_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--add text view-->
+
+            <TextView
+                android:id="@+id/name_plant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="namePlantaly"
+                android:text="@{Asteroid.codename}"
+                android:contentDescription="@string/planet_name"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/text_grey"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent" />
+            <!--add text view-->
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/name_plant"
+                tools:text="2022-12-01"
+                android:text="@{Asteroid.closeApproachDate}"
+                android:contentDescription="@string/planet_data"
+                android:textColor="@color/text_grey"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent" />
+            <!--add image view-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/name_plant"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                app:statusIcon="@{Asteroid.potentiallyHazardous}"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
