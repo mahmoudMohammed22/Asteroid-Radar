@@ -7,4 +7,9 @@ Asteroid Radar is an app to view the asteroids detected by NASA that pass near E
 ## Libraries
 
 * RecyclerView
-* Navigation Component
+* Navigation Component 
+* ViewModel
+* LiveData
+* Room
+* Moshi
+* 
