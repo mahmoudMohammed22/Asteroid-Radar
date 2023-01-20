@@ -21,4 +21,6 @@ Asteroid Radar is an app to view the asteroids detected by NASA that pass near E
 * Accessibility Talkback
 * Lifecycle Components
 
+## API Key
+To get an API Key from NASA to perform network requests to Nasa servers. You need to generate an api key by going to https://api.nasa.gov/
 
