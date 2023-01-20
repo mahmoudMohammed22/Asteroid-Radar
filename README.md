@@ -12,4 +12,13 @@ Asteroid Radar is an app to view the asteroids detected by NASA that pass near E
 * LiveData
 * Room
 * Moshi
-* 
+* Piccaso 
+* WorkManger
+* Databinding 
+* Material Design Component
+* Coroutines 
+* Retrofit
+* Accessibility Talkback
+* Lifecycle Components
+
+
